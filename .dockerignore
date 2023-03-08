@@ -1,0 +1,7 @@
+node_modules
+build
+dist
+docker_volumes
+.env
+Dockerfile*
+docker-compose.*

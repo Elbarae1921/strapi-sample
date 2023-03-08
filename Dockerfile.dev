@@ -1,0 +1,8 @@
+FROM node:16.14.2-alpine
+WORKDIR /app
+COPY ./package*.json ./
+RUN npm i
+ENV PATH=/usr/local/myapp/node_modules/.bin:$PATH
+WORKDIR /app/dev
+COPY . .
+CMD ["npm", "run", "develop"]
